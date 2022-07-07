@@ -1,0 +1,293 @@
+form .category label .dot{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+    color: #000;
+  }
+   #dot-1:checked ~ .category label .one,
+   #dot-2:checked ~ .category label .two,
+   #dot-3:checked ~ .category label .three{
+     background: #007bff;
+     border-color: #d9d9d9;
+   }
+   form input[type="radio"]{
+     display: none;
+   }
+   form .button{
+     height: 45px;
+     margin: 35px 0
+   }
+   form .button input{
+     height: 100%;
+     width: 100%;
+     border-radius: 5px;
+     border: none;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     background: #007bff;
+     /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+   }
+   form .button input:hover{
+    /* transform: scale(0.99); */
+    /* background: linear-gradient(-135deg, #71b7e6, #9b59b6); */
+    background: #2c9028;
+    }
+   @media(max-width: 584px){
+   .container{
+    max-width: 100%;
+    margin: auto 10px;
+  }
+  form .user-details .input-box{
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    form .category{
+      width: 100%;
+    }
+    .content form .user-details{
+      /* max-height: 300px; */
+      /* overflow-y: scroll; */
+      flex-direction: row;
+    }
+    .user-details::-webkit-scrollbar{
+      width: 5px;
+    }
+    }
+    @media(max-width: 459px){
+    .container .content .category{
+      flex-direction: column;
+    }
+  }
+  
+  
+  form .user-details .input-box{
+    margin-bottom: 10px;
+    /* width: calc(100% / 2 - 20px); */
+  }
+  
+  .user-details input {
+    height: 45px;
+    width: 100%;
+    outline: 0;
+    /* border-bottom: 1px solid #b1b1b1; */
+    /* border-radius: 5px; */
+    font-size: 14px;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: all 0.5s
+  }
+  
+  
+  
+  
+  .input_div {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    width: 100%
+  }
+  
+  .input_div textarea {
+    height: 90px;
+    width: 100%;
+    outline: 0;
+    border: 2px solid #b1b1b1;
+    /* border-radius: 5px; */
+    padding: 5px;
+    resize: none;
+    box-sizing: border-box;
+    transition: all 0.5s;
+  }
+  
+  .input_text {
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+  }
+  .input_div .input_text input[type="text"] {
+    height: 45px;
+    width: 100%;
+    outline: 0;
+    border: 0px solid #b1b1b1;
+    /* border-radius: 5px; */
+    border-bottom: 1px solid #999797;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    color: #000;
+    background-color: transparent;
+  }
+  
+  
+  .input_text select {
+    height: 45px;
+    width: 100%;
+    outline: 0;
+    border: 0px solid #b1b1b1;
+    /* border-radius: 5px; */
+    padding: 5px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    cursor: pointer;
+    /* color: #b1b1b1 */
+    color: #000;
+  }
+  
+  .input_text select option:nth-child(1) {
+    display: none
+  }
+  
+  
+  .shown_name {
+    color: #007bff !important
+  }
+  
+  .input_text label {
+    pointer-events: none;
+    position: absolute;
+    top: 14px;
+    left: 5px;
+    font-size: 14px;
+    color: #b1b1b1;
+    transition: all 0.5s
+  }
+  
+  .input_text input:focus {
+    border-bottom: 1px solid #007bff !important;
+  }
+  
+  .input_text input:focus~label,
+  .input_text input:valid~label {
+    top: -17px;
+    left: 0;
+    color: #007bff;
+    font-weight: 500;
+    transition: all 0.5s ease
+  }
+  
+  form .user-details .input-box{
+    margin-bottom: 10px;
+    width: calc(100% / 2 - 20px);
+  }
+  .men{
+    max-width: 500px;
+  }
+  @media (max-width: 920px) {
+    form .user-details .input-box{
+      margin-bottom: 10px;
+      width: calc(100% / 1 - 20px);
+    }
+  }
+  
+  
+  .container_service {
+    width: 100%;
+      /* max-width: 640px; */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 13px;
+  }
+  
+  ul.ks-cboxtags {
+      list-style: none;
+      padding: 20px;
+  }
+  ul.ks-cboxtags li{
+    display: inline;
+  }
+  ul.ks-cboxtags li label{
+      display: inline-block;
+      background-color: rgba(255, 255, 255, .9);
+      border: 2px solid rgba(139, 139, 139, .3);
+      color: #adadad;
+      border-radius: 25px;
+      white-space: nowrap;
+      margin: 3px 0px;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      transition: all .2s;
+  }
+  
+  ul.ks-cboxtags li label {
+      padding: 8px 12px;
+      cursor: pointer;
+  }
+  
+  ul.ks-cboxtags li label::before {
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 12px;
+      padding: 2px 6px 2px 2px;
+      content: "\f067";
+      transition: transform .3s ease-in-out;
+  }
+  
+  ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+      content: "\f00c";
+      transform: rotate(-360deg);
+      transition: transform .3s ease-in-out;
+  }
+  
+  ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+      border: 2px solid #007bff;
+      background-color: #007bff;
+      color: #fff;
+      transition: all .2s;
+  }
+  
+  ul.ks-cboxtags li input[type="checkbox"] {
+    display: absolute;
+  }
+  ul.ks-cboxtags li input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+  }
+  ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+    border: 2px solid #007bff;
+  }
+  
+  .input_div label{
+    color: rgb(105, 105, 105);
+    /* font-weight: 100; */
+  }
+  
+  
+  .backButton{
+    position: fixed;
+    top:20px;
+    left:20px;
+  
+  }
+  .btnn{
+    width:50px;
+    height:40px;
+    border-radius: 5px;
+    background:#007bff;
+    border:0px ;
+  }
+  .backButton button{
+    padding: 5px;
+  }
+  .backButton button{
+    text-align: center;
+  }
+  .backButton button i{
+    font-size: 1.2rem;
+  }
+  

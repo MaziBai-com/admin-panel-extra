@@ -1,0 +1,17 @@
+.adminContainer{
+    display: flex; 
+    width: 100vw;
+    padding: 0 ;
+    background-color: #eee;
+}
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.userList{
+    border-radius: 10px;
+    margin:  10px 20px;
+    background-color: #fff;
+    padding: 30px;
+}

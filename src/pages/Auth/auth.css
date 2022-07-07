@@ -1,0 +1,22 @@
+.adminAuthContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adminHeader{
+    margin: 10px 0 20px 0;
+    font-size: 20px;
+    text-align: center;
+}
+.adminAuth{
+    width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,.3);
+    border-radius: 10px;
+
+}

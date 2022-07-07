@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Snippet - BBBootstrap</title>
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+        .container {
+            margin-top: 50px;
+            margin-bottom: 50px
+        }
+
+        .card {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            font-size: 12px;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 0.10rem
+        }
+
+        .card-header:first-child {
+            border-radius: calc(0.37rem - 1px) calc(0.37rem - 1px) 0 0
+        }
+
+        .card-header {
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 0;
+            background-color: #fff;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+        }
+
+        .track {
+            position: relative;
+            background-color: #ddd;
+            height: 7px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-bottom: 60px;
+            margin-top: 50px
+        }
+
+        .track .step {
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            width: 25%;
+            margin-top: -18px;
+            text-align: center;
+            position: relative
+        }
+
+        .track .step.active:before {
+            background: #FF5722
+        }
+
+        .track .step::before {
+            height: 7px;
+            position: absolute;
+            content: "";
+            width: 100%;
+            left: 0;
+            top: 18px
+        }
+
+        .track .step.active .icon {
+            background: #ee5435;
+            color: #fff
+        }
+
+        .aside img {
+            border-radius: 50px;
+        }
+
+        .track .icon {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            position: relative;
+            border-radius: 100%;
+            background: #ddd
+        }
+
+        .track .step.active .text {
+            font-weight: 400;
+            color: #000
+        }
+
+        .track .text {
+            display: block;
+            margin-top: 7px
+        }
+
+        .itemside {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            width: 100%
+        }
+
+        .itemside .aside {
+            position: relative;
+            -ms-flex-negative: 0;
+            flex-shrink: 0
+        }
+
+        .img-sm {
+            width: 80px;
+            height: 80px;
+            padding: 7px
+        }
+
+        ul.row,
+        ul.row-sm {
+            list-style: none;
+            padding: 0
+        }
+
+        .itemside .info {
+            padding-left: 15px;
+            padding-right: 7px
+        }
+
+        .itemside .title {
+            display: block;
+            margin-bottom: 5px;
+            color: #212529
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem
+        }
+
+        .btn-warning {
+            color: #ffffff;
+            background-color: #ee5435;
+            border-color: #ee5435;
+            border-radius: 1px
+        }
+
+        .btn-warning:hover {
+            color: #ffffff;
+            background-color: #ff2b00;
+            border-color: #ff2b00;
+            border-radius: 1px
+        }
+
+        .acc {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: end;
+        }
+
+        .acc a {
+            margin: 10px;
+            padding: 10px 35px;
+            /* line-height: 50px; */
+            color: #fff;
+            font-size: 12px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .acc .ac1 {
+            border: 1px solid green;
+            background-color: green;
+        }
+
+        .acc .ac2 {
+            border: 1px solid red;
+            background-color: red;
+        }
+
+        .det {
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            /* justify-content: space-between; */
+        }
+
+        .dett {
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            text-align: left;
+            flex-direction: column;
+            /* justify-content: space-between; */
+        }
+
+        .service {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 70%;
+            /* padding: 10px 35px; */
+        }
+
+        .service div {
+            margin-right: 5px;
+
+
+            /* border: 1px solid green; */
+        }
+
+        .text-right {
+            float: right;
+        }
+
+        .orange {
+            color: rgb(216, 137, 19);
+        }
+
+        @media screen and (max-width:982px) {
+            .itemside {
+                flex-direction: column;
+            }
+
+        }
+
+        @media screen and (max-width:400px) {
+            .acc {
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+
+<body oncontextmenu='false' class='snippet-body'>
+    <div class="container">
+        <article class="card">
+            <div class="card-header">Order ID: OD45345345435</div>
+            <div class="card-body">
+                <figure class="itemside mb-3">
+                    <div class="aside"><img src="https://i.imgur.com/iDwDQ4o.png" class="img-sm border"></div>
+                    <figcaption class="info align-self-center">
+                        <!-- <p class="title">Dell Laptop with 500GB HDD <br> 8GB RAM</p> <span class="text-muted">$950 </span> -->
+                    </figcaption>
+
+                    <div class="dett mt-3 ml-2">
+                        <span>USERNAME</span>
+                        <span class="ml-1">+91 99865-97842</span>
+                    </div>
+                    <div class="dett mt-3 ml-5">
+                        <span>ZIP/PINCODE</span>
+                        <span class="ml-1">505209</span>
+                    </div>
+                    <div class="dett mt-3 ml-5">
+                        <span>Status</span>
+                        <span class="ml-1 orange">Pending</span>
+                    </div>
+
+                    <div class="acc mt-4 ml-5">
+                        <a href="#" class="ac1">ACCEPT</a>
+                        <a href="#" class="ac2">REJECT</a>
+                    </div>
+
+                </figure>
+
+                <article class="card mb-3">
+                    <div class="det mt-1 ml-4 mb-1 col">
+                        <div class="col">
+                            <span>SERVIES CHOOSED</span>
+                        </div>
+                        <div class="col">
+                            <span class="">NEAR BY MAIDS</span>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="service ml-5 mb-4 mt-4 col">
+                        <div class="services_choosed col-9">
+                            <div class="row">
+                                <div>SERVICE 1</div>
+                                <div>SERVICE2</div>
+
+
+                            </div>
+                            <div class="row">
+                                <div>SERVICE 3</div>
+                                <div>SERVICE 4</div>
+
+
+
+                            </div>
+                            <div class="row">
+                                <div>SERVICE 5</div>
+                                <div>SERVICE 6</div>
+
+
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="services_choosed  mr-4  col-12 justify-content-right">
+                            <div>MAID1</div>
+                            <div>MAID2</div>
+                            <div>MAID3</div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <div class="card-body row">
+                        <div class="col"> <strong>ORDER PLACED ON</strong> <br>29 NOV 2019 </div>
+                        <div class="col"> <strong>FROM ADDRESS</strong> <br> -------------- </div>
+                        <div class="col"> <strong>TEXT</strong> <br>--------------- </div>
+                    </div>
+
+                </article>
+               
+            </div>
+        </article>
+    </div>
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+    <script type='text/javascript' src=''></script>
+    <script type='text/javascript' src=''></script>
+    <script type='text/Javascript'></script>
+</body>
+
+</html>
